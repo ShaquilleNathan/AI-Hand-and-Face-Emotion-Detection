@@ -17,7 +17,7 @@ This project demonstrates a computer vision system that integrates **Hand Detect
 
 📷 Example Output:  
 <div align="center">
-  <img src="https://i.postimg.cc/65DLGgFx/Whats-App-Image-2025-05-17-at-04-42-27.jpg" alt="Demo Image" style="max-width: 70%; height: auto;" />
+  <img src="https://i.postimg.cc/65DLGgFx/Whats-App-Image-2025-05-17-at-04-42-27.jpg" alt="Demo Image" style="width: 200; height: auto;" />
 </div>
 ---
 
