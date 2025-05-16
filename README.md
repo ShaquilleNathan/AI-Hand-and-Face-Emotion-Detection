@@ -1,4 +1,4 @@
-# AI-Powered Vision System using TensorFlow and Keras
+# Hand and Face Detection using TensorFlow and Keras
 
 This project demonstrates a computer vision system that integrates **Hand Detection**, **Face Detection**, and **Emotion Recognition** using **Python**, **TensorFlow**, and **Keras**. It utilizes live camera input to detect facial expressions and count raised fingers using landmark estimation.
 
