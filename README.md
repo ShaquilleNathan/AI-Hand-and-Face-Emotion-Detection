@@ -38,3 +38,18 @@ This project demonstrates a computer vision system that integrates **Hand Detect
   frame_pixels /= 255
   emotion = model.predict(frame_pixels)[0]
   Q.append(emotion)
+
+## 🧩 Installation
+
+### ✅ Requirements
+
+- Python: `3.9`, `3.10`, `3.11`, atau `3.12`
+- TensorFlow dan dependensi lain:
+
+Install TensorFlow: [https://www.tensorflow.org/install/pip](https://www.tensorflow.org/install/pip)
+
+Install semua package menggunakan pip:
+
+```bash
+pip install tensorflow keras opencv-python numpy collections mediapipe
+
