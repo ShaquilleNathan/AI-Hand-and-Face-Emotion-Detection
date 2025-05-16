@@ -16,7 +16,7 @@ This project demonstrates a computer vision system that integrates **Hand Detect
 - Example: Displaying "2" with an open index and middle finger results in a "Peace ✌️" sign.
 
 📷 Example Output:  
-![Hand Detection Example](<a href="https://ibb.co/bgvjmzC9"><img src="https://i.ibb.co/bgvjmzC9/Whats-App-Image-2025-05-17-at-04-42-27.jpg" alt="Whats-App-Image-2025-05-17-at-04-42-27" border="0"></a>)
+(<a href="https://ibb.co/bgvjmzC9"><img src="https://i.ibb.co/bgvjmzC9/Whats-App-Image-2025-05-17-at-04-42-27.jpg" alt="Whats-App-Image-2025-05-17-at-04-42-27" border="0"></a>)
 
 ---
 
