@@ -27,24 +27,13 @@ This project demonstrates a computer vision system that integrates **Hand Detect
 - Extracts the facial region, converts to grayscale, resizes to `64x64`, normalizes pixels, and passes through a pre-trained CNN model using Keras.
 - Supported emotions:
   - `Angry`, `Disgusted`, `Feared`, `Happy`, `Sad`, `Surprise`, `Neutral`
-- Predicts emotion using:
-  ```python
-  detected_face = frame[int(cy_min):int(cy_max), int(cx_min):int(cx_max)]
-  detected_face = cv2.cvtColor(detected_face, cv2.COLOR_BGR2GRAY)
-  detected_face = cv2.resize(detected_face, (64, 64))
-
-  frame_pixels = img_keras.img_to_array(detected_face)
-  frame_pixels = np.expand_dims(frame_pixels, axis=0)
-  frame_pixels /= 255
-  emotion = model.predict(frame_pixels)[0]
-  Q.append(emotion)
 
 ## 🧩 Installation
 
 ### ✅ Requirements
 
-- Python: `3.9`, `3.10`, `3.11`, atau `3.12`
-- TensorFlow dan dependensi lain:
+- Python: `3.9`, `3.10`, `3.11`, atau `3.12` (as per May 2025)
+- TensorFlow dan other dependencies:
 
 Install TensorFlow: [https://www.tensorflow.org/install/pip](https://www.tensorflow.org/install/pip)
 
@@ -52,4 +41,36 @@ Install all packages using pip:
 
 ```bash
 pip install tensorflow keras opencv-python numpy collections mediapipe
+```
+
+## 🧩 Installation
+▶️ How to Run
+1. Clone this repository:
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+2. Run the main script:
+```bash
+python main.py
+```
+3. Output:
+- A webcam window will appear.
+- Show your hand gesture — the number of fingers will be detected and visualized with lines and dots (landmark graph).
+- Your face will be analyzed in real-time and emotions will be classified from the following set:
+```python
+emotions = ("Angry", "Disgusted", "Feared", "Happy", "Sad", "Surprise", "Neutral")
+```
+Internally, it processes detected face using:
+```python
+detected_face = frame[int(cy_min):int(cy_max), int(cx_min):int(cx_max)]
+detected_face = cv2.cvtColor(detected_face, cv2.COLOR_BGR2GRAY)
+detected_face = cv2.resize(detected_face, (64, 64))
+
+frame_pixels = img_keras.img_to_array(detected_face)
+frame_pixels = np.expand_dims(frame_pixels, axis=0)
+frame_pixels /= 255
+emotion = model.predict(frame_pixels)[0]
+Q.append(emotion)
+```
 
