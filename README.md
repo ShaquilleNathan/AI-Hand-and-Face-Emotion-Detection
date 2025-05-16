@@ -48,7 +48,7 @@ This project demonstrates a computer vision system that integrates **Hand Detect
 
 Install TensorFlow: [https://www.tensorflow.org/install/pip](https://www.tensorflow.org/install/pip)
 
-Install semua package menggunakan pip:
+Install all packages using pip:
 
 ```bash
 pip install tensorflow keras opencv-python numpy collections mediapipe
